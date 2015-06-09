@@ -1,0 +1,21 @@
+group 'com.github.mkopylec'
+version '1.0'
+
+apply plugin: 'java'
+apply plugin: 'groovy'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    compile group: 'org.springframework', name: 'spring-web', version: '+'
+    compile group: 'org.apache.commons', name: 'commons-lang3', version: '+'
+
+    testCompile group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '+'
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '+'
+    testCompile group: 'org.spockframework', name: 'spock-spring', version: '+'
+}
